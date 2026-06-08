@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CVify AI</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+  <div class="left">
+
+    <div class="header">
+      <h1>CVify AI</h1>
+      <p>Create a professional CV in 60 seconds 🇿🇦</p>
+    </div>
+
+    <input type="text" id="name" placeholder="Full Name">
+
+    <input type="email" id="email" placeholder="Email">
+
+    <input type="text" id="phone" placeholder="+27 76 123 4567">
+
+    <input type="text" id="location" placeholder="Durban, South Africa">
+
+    <textarea id="summary" placeholder="Professional Summary"></textarea>
+
+    <button onclick="generateCV()">Generate CV</button>
+
+    <button onclick="downloadPDF()">Download PDF</button>
+
+  </div>
+
+  <div class="right">
+
+    <div id="cv">
+
+      <h1 id="cvName">Your Name</h1>
+
+      <p id="cvEmail">email@example.com</p>
+
+      <p id="cvPhone">+27 76 123 4567</p>
+
+      <p id="cvLocation">Durban, South Africa</p>
+
+      <hr>
+
+      <h2>Professional Summary</h2>
+
+      <p id="cvSummary">
+        Your professional summary will appear here.
+      </p>
+
+      <hr>
+
+      <p>Generated with CVify AI 🇿🇦</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
